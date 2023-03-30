@@ -40,25 +40,24 @@ font-style: normal;
 }
 
 .container {
-
 margin: 0 auto;
 padding-left: 15px;
 padding-right: 15px;
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 480px) {
 .container {
 width: 428px;
     }  
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 .container {
 width: 768px;
     }  
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
 .container {
 width: 1158px;
   }  
@@ -91,32 +90,42 @@ padding-bottom: 120px;
 /*===============HEADER=======================*/
 
 .header-logo {
-    font-family: 'Raleway',sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4D5AE5;
-    margin-right: 76px;
+font-family: 'Raleway',sans-serif;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #4D5AE5;
+margin-right: 76px;
     
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
     
-    .header-logo:hover,
-    .header-logo:focus {
-    color: var(--pressed-state-color);
-    }
+.header-logo:hover,
+.header-logo:focus {
+color: var(--pressed-state-color);
+}
     
-    .header-studio {
-    color: var(--modal-overlay-color);
-    }
+.header-studio {
+color: var(--modal-overlay-color);
+}
 
-    @media screen and (max-width: 767px){
-        .menu, .adress {
-            display: none;
-            
-            }    
-        
-        
-        }
+@media screen and (max-width: 767px) {
+.menu, .adress {
+display: none;
+    }    
+}
+
+.page-header {
+display: flex;
+align-items: center;
+padding-top: 25px;
+padding-bottom: 25px;
+}
+
+.menu-mobal-open_icon {
+padding: 0;
+margin-right: 16px;
+line-height: 0;
+}
