@@ -38,18 +38,19 @@
             </div>
     </address>
     </div>
-    <svg class="menu-mobal-open_icon" width="32" height="22">
+    <div class="menu-hamburger">
+    <svg class="menu-mobal-open_icon js-open-menu" width="32" height="22">
         <use href="./images/symbol-defs.svg#icon-charm_menu-hamburger"></use>
     </svg>
-
-    <div class="mobile-menu">
+</div>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
         <button class="mobile-menu_close_btn">
-            <svg class="mobile-menu_close_icon" width="8" height="8">
+            <svg class="mobile-menu_close_icon js-close-menu" width="8" height="8">
                 <use href="./images/symbol-defs.svg#icon-close-black"></use>
             </svg>
     </button>
         <ul class="list menu-mobile-phone">
-            <li class="menu-phone"><a class="list-menu-phone link"
+            <li class="menu-phone"><a class="list-menu-phone link mobal-sheet"
                 href="./index.html">Studio</a></li>
             <li class="menu-phone"><a class="list-menu-phone link"
                 href="./portfolio.html">Portfolio</a></li>
@@ -512,6 +513,14 @@
       </div>
     </div>
     <script src="./js/modal.js"></script> -->
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html> 
        
