@@ -115,14 +115,22 @@ color: var(--modal-overlay-color);
 .menu, .adress {
 display: none;
  }  
+ .page-header {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    }
+
  .menu-mobal-open_icon {
     line-height: 0;
     margin-right: 24px;
+
     }
     
     .mobile-menu.is-open {
     transform: translateX(0);
-      }
+    }
     
     .mobile-menu {
     position: fixed;
@@ -238,19 +246,6 @@ display: none;
         }
 }
 
-
-
-/* .mobile-menu {
-        display: none;
-    } */
-
-
-    /* .page-header {
-        display: flex;
-        align-items: center;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        } */
 
 
 @media screen and (min-width:768px) {
