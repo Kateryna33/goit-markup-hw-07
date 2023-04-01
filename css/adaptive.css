@@ -388,7 +388,126 @@ display: none;
         
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         } 
+}  
 
 
+@media screen and (min-width:1200px) {
+
+    .page-header {
+        border-bottom: 1px solid var(--accent-color);
+        }
         
-}        
+        .header-logo {
+        font-family: 'Raleway',sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4D5AE5;
+        margin-right: 76px;
+        
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .header-logo:hover,
+        .header-logo:focus {
+        color: var(--pressed-state-color);
+        }
+        
+        .header-studio {
+        color: var(--modal-overlay-color);
+        }
+        
+        .list-menu {
+        font-weight: 500;
+        color: var(--modal-overlay-color);
+        }
+        
+        .menu-first:not(:last-child) {
+        margin-right: 40px;
+        }
+        
+        .menu {
+        display: flex;
+        }
+        
+        .list-menu-one {
+        color: var(--modal-overlay-color);
+        font-weight: 500;
+        
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .list-menu-one:hover,
+        .list-menu-one:focus {
+        color: var(--pressed-state-color);
+        }
+        
+        .studio-sheet::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 48px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--pressed-state-color);
+        margin-top: 20px;
+        }
+        .studio-sheet {
+        color: var(--pressed-state-color);
+        }
+        
+        .portfolio-sheet::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 66px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--pressed-state-color);
+        margin-top: 20px; 
+        }
+        .portfolio-sheet {
+        color: var(--pressed-state-color);    
+        }
+        
+        
+        .page-header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        }
+        
+        .navigation {
+        display: flex;
+        align-items: center;
+        }  
+        
+        .adress-list {
+        display: flex;
+        margin-left: auto;
+        }
+        
+        .contact-menu {
+        color: var(--text-color);
+        }
+        
+        .contact-menu:not(:last-child) {
+        margin-right: 40px;    
+        }
+        
+        
+        .adress-item-link:hover,
+        .adress-item-link:focus {
+        color: var(--pressed-state-color);
+        }
+        
+        .adress-item-link {
+        color:  var(--text-color);
+        
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        } 
+    }
