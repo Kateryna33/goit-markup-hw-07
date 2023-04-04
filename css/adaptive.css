@@ -314,6 +314,7 @@ display: none;
     border-radius: 2px;
     background-color: var(--pressed-state-color);
     margin-top: 20px; 
+   
     }
 
 .portfolio-sheet {
@@ -326,7 +327,7 @@ display: none;
     align-items: center;
     justify-content: space-between;
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 0;
     }
         
 .navigation {
@@ -340,6 +341,15 @@ display: none;
     margin-top: auto;
     justify-content: space-between;
     padding-right: 16px;
+    }
+
+    .adress-list {
+        padding-bottom: 16px;
+        padding-top: 16px;
+        }
+
+    .adress-item-link {
+        margin-bottom: 12px;
     }
         
         
@@ -807,9 +817,7 @@ screen and (min-resolution: 2dppx) {
 .icon-pic {
     fill: var(--dark-color);
     display: flex;
-    
     justify-content: center;
-    
     background-color: var(--light-color);
     padding-top: 24px;
     padding-bottom: 24px;
@@ -827,6 +835,19 @@ screen and (min-resolution: 2dppx) {
     color: #2E2F42;
     line-height: 1.2;
     margin-bottom: 8px;
+        }
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+        /* align-self: stretch; */
+         /* margin-bottom: 72px; */
+    width: 264px;
+    height: 72px;
         }
             
 .visually-hidden {
