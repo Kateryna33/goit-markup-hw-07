@@ -82,8 +82,8 @@ list-style: none;
 }
 
 .section {
-padding-top: 120px;
-padding-bottom: 120px;
+padding-top: 96px;
+padding-bottom: 96px;
 }
 
 
@@ -698,7 +698,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 
  /* ------------------OUR WORK-------------------------- */
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
 
 .icon-pic {
     display: none;
@@ -709,14 +709,17 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     align-items: center;
 }
 
-.section {
+/* .section {
         padding-top: 96px;
         padding-bottom: 96px;
-        }
+        } */
 
 .list-work {
         display: block;
         }
+        .menu-item:not(:last-child) {
+margin-bottom: 72px;
+        }  
    
 .title {
     font-weight: 700;
@@ -876,9 +879,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         background: var(--light-color)
         }
 
-        .section {
+        /* .section {
             padding-top: 0;
-        }
+        } */
         .list-team {
             display: flex;
             flex-wrap: wrap;
@@ -963,16 +966,19 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
 }
 
 @media screen and (min-width:768px) {
-    .list-team {
-        flex-wrap: nowrap;
+ .list-team {
+        flex-wrap: wrap;
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+       
     }
-    
     .section-second {
         background: var(--light-color)
         }
         
         
-        .section-conteiner-hidden {
+    .section-conteiner-hidden {
         font-weight: 700;
         font-size: 36px;
         color: var(--dark-color);
@@ -982,20 +988,21 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         margin-bottom: 72px;
         }
         
-        .soc-list {
+    .soc-list {
         display: flex;
         /* justify-content: center; */
         margin-top: 8px;
         gap: 24px;
         }
         
-        .picture-soc-item {
+    .picture-soc-item {
         width: 40px;
         height: 40px;
         padding-right: 24px;
+        
         } 
         
-        .picture-soc-icon {
+    .picture-soc-icon {
         fill: var(--primery-bcg-color); 
         }
         
@@ -1030,7 +1037,8 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
         .picture-card {
         padding: 32px 16px;  
         border: 1px solid var(--accent-color);
-        border-top: none;  
+        border-top: none;
+       
         
         }
         
