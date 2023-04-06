@@ -1520,6 +1520,7 @@ display: flex;
         
 .container-footer {
 display: flex;
+flex-wrap: wrap;
 }
         
 .footer-logo {
@@ -1566,6 +1567,7 @@ justify-content: center;
             
 .social-media {
 margin-left: 120px;
+
     }
 
 .social-media-link {
@@ -1599,9 +1601,9 @@ margin-top: 16px;
 
 .subscribe-form {
 display: flex;
-margin-left: auto;
-
-    }
+align-items: center;
+gap: 24px;
+}
                 
 .subscribe-name {
 font-family: 'Roboto', sans-serif;
@@ -1609,6 +1611,7 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 color: var(--primery-bcg-color);
+margin-top: 72px;
 }
                 
 .subscribe-input {
@@ -1620,6 +1623,7 @@ border: 1px solid #FFFFFF;
 border-radius: 4px;
 color: var(--primery-bcg-color);
 background-color: var(--hero-background-color);
+
     }
                 
 .subscribe-input::placeholder {
