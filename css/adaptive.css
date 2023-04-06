@@ -1521,6 +1521,7 @@ display: flex;
 .container-footer {
 display: flex;
 flex-wrap: wrap;
+margin-left: 108px;
     }
         
 .footer-logo {
@@ -1605,6 +1606,7 @@ margin-top: 16px;
 align-items: center;
 gap: 24px;
 /* flex-direction: column; */
+
 }
                 
 .subscribe-name {
