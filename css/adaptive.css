@@ -1694,7 +1694,8 @@ right: 24px;
         .container-footer {
         display: flex;
         flex-wrap: nowrap;
-       }
+        padding-left: 0;
+        }
         
         .footer-logo {
         font-family: "Raleway", sans-serif;
@@ -1817,7 +1818,7 @@ display: inline-block;
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 24px;
-margin-left: 24px;
+/* margin-left: 24px; */
 min-width: 165px;
 border-radius: 4px;
 background-color: var(--primery-brand-color);
