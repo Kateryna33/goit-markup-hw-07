@@ -338,8 +338,8 @@ display: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     }
         
 .navigation {
@@ -355,10 +355,7 @@ display: none;
     padding-right: 16px;
     }
 
-/* .adress-list {
-    padding-bottom: 16px;
-    padding-top: 16px;
-        } */
+
 
 .adress-item-link {
     margin-bottom: 12px;
