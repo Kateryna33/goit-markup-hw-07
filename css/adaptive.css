@@ -120,6 +120,7 @@ display: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 428px;
  }
  .page-header {
     display: flex;
@@ -669,7 +670,7 @@ display: none;
         }
     }
 
- @media screen and (min0device-pixel-ratio: 2) and (max-width: 767px), 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), 
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero {
@@ -1843,7 +1844,74 @@ right: 24px;
 }
 } */
 
-@media screen and (max-width:767px) {
+ 
+.backdrop.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    }
+    
+    .backdrop {
+    position: fixed;
+    z-index: inherit;
+    perspective: 700px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(46, 47, 66, 0.4);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+    transition: transform 500ms linear, opacity 800ms linear;
+    width: 408px;
+    height: 576px;
+    background: #FCFCFC;
+    opacity: 1;
+    padding: 72px 24px 24px 24px;
+    } 
+    
+    .is-hidden>.modal {
+    transform: translate(-50%, -50%) rotate(180deg) scale(0);
+    }
+    
+    .modal-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    /* background: transparent; */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #E7E9FC;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .modal-close:hover, 
+    .modal-close:focus {
+    fill: var(--primery-bcg-color);
+    background-color: var(--pressed-state-color);
+    }
+    
+    .modal-close-btn-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    }
+    
+
 
 .form-main {
     font-weight: 500;
@@ -2002,5 +2070,4 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-form-send:hover,
 .modal-form-send:focus {
 background-color: var(--pressed-state-color);
-}
 }
